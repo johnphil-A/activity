@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#333;
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(120deg,#00c3ff,#005bea);
+    color:white;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#005bea;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+
+/* Content Cards */
+
+.content{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:60px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:white;
+}
+
+/* Smooth Page Fade */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
